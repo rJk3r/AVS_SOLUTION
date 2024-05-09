@@ -1,0 +1,56 @@
+object Form1: TForm1
+  Left = 353
+  Height = 501
+  Top = 137
+  Width = 780
+  Caption = 'Калькулятор'
+  ClientHeight = 501
+  ClientWidth = 780
+  LCLVersion = '2.2.0.4'
+  object Button1: TButton
+    Left = 48
+    Height = 57
+    Top = 424
+    Width = 680
+    Caption = 'ПЕРЕВЕСТИ'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 282
+    Height = 16
+    Top = 8
+    Width = 217
+    Caption = 'ВНУТРЕННИЕ ФОРМАТЫ ДАННЫХ'
+    OnClick = Label1Click
+  end
+  object Edit1: TEdit
+    Left = 204
+    Height = 28
+    Top = 200
+    Width = 373
+    OnChange = Edit1Change
+    TabOrder = 1
+    Text = 'Введите начальное число'
+  end
+  object Edit2: TEdit
+    Left = 208
+    Height = 28
+    Top = 250
+    Width = 368
+    TabOrder = 2
+    Text = 'Ответ'
+  end
+  object Label2: TLabel
+    AnchorSideTop.Side = asrCenter
+    AnchorSideRight.Side = asrCenter
+    AnchorSideBottom.Side = asrCenter
+    Left = 246
+    Height = 48
+    Top = 120
+    Width = 289
+    Alignment = taCenter
+    Caption = 'Основная задача программы:'#10'перевод чисел с плавающей точкой типа float'#10'во внутренний формат данных (вариант 6)'
+    ParentBidiMode = False
+  end
+end
